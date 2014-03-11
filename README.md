@@ -2,7 +2,11 @@
 
 This is a project built with Elixir that uses Dynamo to serve web requests.
 
+It's intent is to serve as a template blog or webpage avoiding the boilerplate of creating one. So you can start playing faster with technology based on Elixir and Dynamo
+
 Creating the webapp with `dynamo`
+
+This is for creating a new application using dynamo:
 
 ```bash
 # Clone repo and enter its folder
@@ -13,8 +17,8 @@ MIX_ENV=test mix do deps.get, test
 # Compile dynamo into the mix
 mix compile
 # Create the project
-mix dynamo ~/storyteller
-cd ~/storyteller
+mix dynamo ~/webapp
+cd ~/webapp
 # Install dependencies. Similar to bundler. Nice!
 mix deps.get
 # Compile dynamo appq into the mix
@@ -28,6 +32,11 @@ mix server
 * Blog structure and layout based on the tutorial ***"HTML 5 and CSS 3: The Techniques You'll Soon Be Using"***. Link [here][html5_and_css3_blog]
 
 [html5_and_css3_blog]: http://code.tutsplus.com/tutorials/html-5-and-css-3-the-techniques-youll-soon-be-using--net-5708 "HTML 5 and CSS 3: The Techniques You'll Soon Be Using"
+
+## License
+Webapp is released under the [MIT License].
+
+[MIT License]: http://opensource.org/licenses/MIT "MIT License"
 
 ## Resources
 

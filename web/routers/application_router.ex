@@ -18,9 +18,4 @@ defmodule ApplicationRouter do
     conn = conn.assign(:title, "Welcome to Webapp!")
     render conn, "index.html"
   end
-
-  get "/stream" do
-    conn = conn.resp_content_type("text/event-stream")
-    conn = conn.send_chunked(200)
-  end
 end

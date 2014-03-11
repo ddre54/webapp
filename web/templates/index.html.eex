@@ -1,10 +1,12 @@
 <article class="blog-post">
   <header>
     <h2>This is the first blog post</h2>
-    <p>Posted on <time datetime="2014-03-11T20:41:25-04:00">March 11th 2014</time> by <a href="#">David Rodas</a> - <a href="#comments">3 comments</a></p>
+    <p>Posted on <time datetime="2014-03-11T20:41:25-04:00">March 11th 2014</time> by <a href="https://github.com/ddre54" target="_blank">David Rodas</a> - <a href="#comments">3 comments</a></p>
   </header>
-  <p>The examples and experiments here all will address different kind of technologies and resources to make possible to create prototypes that scale in nature.
+  <p>The examples and experiments here all will address different kind of technologies and resources to make possible to create prototypes that scale.</p>
 
-  Considering that a prototype has to be easy do build (Proof of concept) without taking aside that it can handle the growth of the client base.
+  <p>A big consideration has to be that, the scaling experiments should at mininimum be ready to use, in order to avoid the tedious work of hacking something together that is boiler plate in order to actually prove the real prototype in question (proof of concept), without taking aside that the initial prototype should in nature be ready to handle the growth of the client base.</p>
+
+  <p>That's why this blog itself has been crafted with that on mind using Elixir and Dynamo. (also as a learning exercise for my own amusement)</p>
   </p>
 </article>

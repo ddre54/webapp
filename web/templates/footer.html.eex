@@ -1,5 +1,28 @@
-<ol>
-  <li>Change this template at <code>web/templates/index.html.eex</code></li>
-  <li>Add new routes at <code>web/routers/application_router.ex</code></li>
-  <li>Deploy to production with <code>MIX_ENV=prod mix do compile, server</code></li>
-</ol>
+<div>
+  <section>
+    <header>
+      <h3>Notes</h3>
+    </header>
+    <ol>
+      <li>Change this template at <code>web/templates/index.html.eex</code></li>
+      <li>Add new routes at <code>web/routers/application_router.ex</code></li>
+      <li>Deploy to production with <code>MIX_ENV=prod mix do compile, server</code></li>
+    </ol>
+  </section>
+  <section>
+    <header>
+      <h3>About</h3>
+    </header>
+    <p>
+      Author: David Rodas<br>
+      Work:   Adaptation to Elixir and Dynamo<br>
+      Year:   March 2013
+    </p>
+  </section>
+  <section>
+    <header>
+      <h3>Credits</h3>
+    </header>
+    <p>The layout and design is from the tutorial: <br><a href="http://code.tutsplus.com/tutorials/html-5-and-css-3-the-techniques-youll-soon-be-using--net-5708" target="_blank">HTML 5 and CSS 3: The Techniques You'll Soon Be Using</a></p>
+  </section>
+</div>
