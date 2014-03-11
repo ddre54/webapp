@@ -20,7 +20,7 @@ body {
   background: #f0f0f0;
 }
 
-h2 {
+h1, h2 {
   font-size: 28px;
   line-height: 44px;
   padding: 22px 0;
@@ -89,8 +89,8 @@ nav ul li {
 **/
 
 #introduction {
-  margin-top: 66px;
-  padding: 44px;
+  margin-top: 86px;
+  padding: 34px;
 
   background: rgb(90,167,84); /* Old browsers */
   background: -moz-linear-gradient(top,  rgba(90,167,84,1) 0%, rgba(97,196,25,1) 50%, rgba(90,167,84,1) 100%); /* FF3.6+ */
@@ -225,7 +225,6 @@ aside {
 /**
   Comments Styles
 **/
-
 section#comments article:nth-child(2n+1) {
   padding: 21px;
   background: #E3E3E3;
