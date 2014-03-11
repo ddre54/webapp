@@ -25,7 +25,7 @@
         <%= content_for(:template) %>
       </section>
 
-      <section id="comments">
+      <section id="comments" class="top-section-border">
         <%= render "comments.html" %>
       </section>
 

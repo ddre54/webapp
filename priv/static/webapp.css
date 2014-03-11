@@ -91,7 +91,15 @@ nav ul li {
 #introduction {
   margin-top: 66px;
   padding: 44px;
-  background: #5AA754;
+
+  background: rgb(90,167,84); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(90,167,84,1) 0%, rgba(97,196,25,1) 50%, rgba(90,167,84,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(90,167,84,1)), color-stop(50%,rgba(97,196,25,1)), color-stop(100%,rgba(90,167,84,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(90,167,84,1) 0%,rgba(97,196,25,1) 50%,rgba(90,167,84,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(90,167,84,1) 0%,rgba(97,196,25,1) 50%,rgba(90,167,84,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(90,167,84,1) 0%,rgba(97,196,25,1) 50%,rgba(90,167,84,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(90,167,84,1) 0%,rgba(97,196,25,1) 50%,rgba(90,167,84,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5aa754', endColorstr='#5aa754',GradientType=0 ); /* IE6-9 */
 
   /*
   background-size: 100%;
@@ -137,12 +145,56 @@ nav ul li {
     padding-right: 22px;
   }
 
-  aside {
-    display: table-cell;
-    width: 300px;
+
+/**
+  Sidebar Styles
+**/
+aside {
+  display: table-cell;
+  width: 300px;
+
+  /* CSS gradient generator*/
+  /* http://www.colorzilla.com/gradient-editor/ */
+  background: -moz-linear-gradient(left,  rgba(224,224,224,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(224,224,224,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left,  rgba(224,224,224,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left,  rgba(224,224,224,0.65) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left,  rgba(224,224,224,0.65) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+  background: linear-gradient(to right,  rgba(224,224,224,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6e0e0e0', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+}
+
+  aside section {
+    margin: 22px 0 0 22px;
+    padding: 11px 22px;
+
+    -moz-border-radius: 11px;
+    -webkit-border-radius: 11px;
+
+    background: -moz-linear-gradient(top,  rgba(173,173,173,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(173,173,173,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(173,173,173,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(173,173,173,0.65) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(173,173,173,0.65) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(173,173,173,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6adadad', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
   }
 
+    aside section ul {
+      margin: 0 0 0 22px;
+      list-style: none;
+    }
 
+      aside section ul li a {
+        display: block;
+        text-decoration: none;
+        color: #000;
+      }
+
+      aside section ul li a:hover {
+        text-decoration: underline;
+        cursor: auto
+      }
 /**
   Blog Post Styles
 **/
@@ -173,6 +225,7 @@ nav ul li {
 /**
   Comments Styles
 **/
+
 section#comments article:nth-child(2n+1) {
   padding: 21px;
   background: #E3E3E3;
@@ -181,4 +234,61 @@ section#comments article:nth-child(2n+1) {
   /* border-radius not implemented yet*/
   -moz-border-radius: 11px;
   -webkit-border-radius: 11px;
+}
+
+/**
+  Comment Form Styles
+**/
+form {
+  display: block;
+}
+
+form p {
+  display: table;
+  margin-bottom: 22px;
+  padding: 0 22px;
+}
+
+  form label {
+    display: table-cell;
+    width: 140px;
+    padding-right: 20px;
+    text-align: right;
+    font-weight: bold;
+    vertical-align: top;
+  }
+
+  form input.comment-form-input {
+    display: table-cell;
+    width: 300px;
+    height: 20px;
+    border: 1px solid #d7d7d7;
+  }
+
+  form textarea {
+    width: 300px;
+    height: 100px;
+    border: 1px solid #d7d7d7;
+  }
+
+  form input[type="submit"] {
+    margin-left: 162px;
+  }
+/**
+  Footer Styles
+**/
+footer {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background: #222;
+}
+
+/**
+  Shared Styles
+**/
+.top-section-border {
+  margin-top: 21px;
+  padding-top: 22px;
+  border-top: 1px solid #d7d7d7;
 }

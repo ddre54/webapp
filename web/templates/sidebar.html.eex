@@ -12,3 +12,18 @@
     </li>
   </ul>
 </section>
+
+<section>
+  <header>
+    <h3>Archives</h3>
+  </header>
+  <ul>
+    <li>
+      <a href="#">Some link 1</a>
+      <a href="#">Some link 2</a>
+      <a href="#">Some link 3</a>
+      <a href="#">Some link 4</a>
+      <a href="#">Some link 5</a>
+    </li>
+  </ul>
+</section>

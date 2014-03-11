@@ -1,16 +1,16 @@
-<form action="#" method="post">
+<form action="#" method="post" class="top-section-border">
   <h3>Post a comment</h3>
   <p>
     <label for "name">Name</label>
-    <input name="name" id="name" type="text" required>
+    <input name="name" id="name" type="text" required class="comment-form-input">
   </p>
   <p>
     <label for "email">Email</label>
-    <input name="email" id="email" type="email" required>
+    <input name="email" id="email" type="email" required class="comment-form-input">
   </p>
   <p>
     <label for "website">Website</label>
-    <input name="website" id="website" type="url">
+    <input name="website" id="website" type="url" class="comment-form-input">
   </p>
   <p>
     <label for "comment">Comment</label>
