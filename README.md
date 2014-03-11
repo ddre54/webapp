@@ -27,6 +27,19 @@ mix compile
 mix server
 ```
 
+## Running it on production
+
+```bash
+MIX_ENV=prod mix do compile, server & disown
+```
+
+If the above doesn't work, and the server is kill when you close the terminal, try this:
+
+```bash
+MIX_ENV=prod mix server & disown
+```
+
+
 ## Credits
 
 * Blog structure and layout based on the tutorial ***"HTML 5 and CSS 3: The Techniques You'll Soon Be Using"***. Link [here][html5_and_css3_blog]
