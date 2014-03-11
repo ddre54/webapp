@@ -23,7 +23,13 @@ mix compile
 mix server
 ```
 
-Resources:
+## Credits
+
+* Blog structure and layout based on the tutorial ***"HTML 5 and CSS 3: The Techniques You'll Soon Be Using"***. Link [here][html5_and_css3_blog]
+
+[html5_and_css3_blog]: http://code.tutsplus.com/tutorials/html-5-and-css-3-the-techniques-youll-soon-be-using--net-5708 "HTML 5 and CSS 3: The Techniques You'll Soon Be Using"
+
+## Resources
 
 * [Elixir website](http://elixir-lang.org/)
 * [Elixir getting started guide](http://elixir-lang.org/getting_started/1.html)

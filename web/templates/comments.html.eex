@@ -1,0 +1,17 @@
+<h3>Comments</h3>
+<article>
+  <header>
+    <a href="#">David Rodas</a>
+    on
+    <time datetime="2014-03-11T20:51:20-04:00">March 11th 2014 at 20:51</time>
+  </header>
+  <p>This is a comment structure... just as template</p>
+</article>
+<article>
+  <header>
+    <a href="#">David Rodas</a>
+    on
+    <time datetime="2014-03-11T20:51:20-04:00">March 11th 2014 at 20:51</time>
+  </header>
+  <p>This is a comment structure... just as template</p>
+</article>

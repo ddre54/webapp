@@ -1,0 +1,184 @@
+/**
+  Main Styles
+**/
+
+/* Makeshift CSS Reset */
+{
+  margin: 0;
+  padding: 0;
+}
+
+/* Tell the browser to render HTML5 elements as block */
+header, footer, aside, nav, article {
+  display: block;
+}
+
+body {
+  margin: 0 auto;
+  width: 940px;
+  font: 13px/22px Helvetica, Arial, sans-serif;
+  background: #f0f0f0;
+}
+
+h2 {
+  font-size: 28px;
+  line-height: 44px;
+  padding: 22px 0;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 22px;
+  padding: 11px 0;
+}
+
+p {
+  padding-bottom: 22px;
+}
+
+
+/**
+  Navigation Styles
+**/
+nav {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background: #4A4A4C;
+}
+
+nav ul {
+  margin: 0 auto;
+  width: 940px;
+  list-style: none;
+}
+
+
+nav ul li {
+  float: left;
+}
+
+  nav ul li a {
+    display: block;
+    margin-right: 20px;
+    width: 140px;
+    font-size: 14px;
+    line-height: 44px;
+    text-align: center;
+    text-decoration: none;
+    color: #777;
+  }
+
+    nav ul li a:hover {
+      color: #fff;
+    }
+
+    nav ul li.selected a {
+      color: #fff;
+    }
+
+    nav ul li.subscribe a {
+      margin-left: 22px;
+      padding-left: 33px;
+      text-align: left;
+      background: url("rss.png") left center no-repeat;
+    }
+
+/**
+  Introduction Styles
+**/
+
+#introduction {
+  margin-top: 66px;
+  padding: 44px;
+  background: #5AA754;
+
+  /*
+  background-size: 100%;
+  border-radius: 22px;
+  */
+
+  /* background-size not implemented yet */
+  -webkit-background-size: 100%;
+  -o-background-size: 100%;
+  -khtml-background-size: 100%;
+
+  /* border-radious not implemented yet */
+  -moz-border-radius: 22px;
+  -webkit-border-radius: 22px;
+}
+
+#introduction h2, #introduction p¬†{
+  width: 366px;
+}
+
+#introduction h2 {
+  padding: 0 0 22px 0;
+  font-weight: normal;
+  color: #fff;
+}
+
+#introduction p {
+  padding: 0;
+  color: #d9f499;
+}
+
+
+/**
+  Content Styles
+**/
+#content {
+  display: table;
+}
+
+  #main-content {
+    display: table-cell;
+    width: 620px;
+    padding-right: 22px;
+  }
+
+  aside {
+    display: table-cell;
+    width: 300px;
+  }
+
+
+/**
+  Blog Post Styles
+**/
+.blog-post div {
+  /*column-count: 2;*/
+  /*column-gap: 22px;*/
+
+  /* Column-count not implemented yet */
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+
+  /* Column-gap not implemented yet */
+  -moz-column-gap: 22px;
+  -webkit-column-gap: 22px;
+}
+
+  .blog-post header {
+    column-span: all;
+  }
+
+.blog-post img {
+  margin: 22px 0;
+  box-shadow: 3px 3px 7px #777;
+  -webkit-box-shadow: 3px 3px 7px #777;
+}
+
+
+/**
+  Comments Styles
+**/
+section#comments article:nth-child(2n+1) {
+  padding: 21px;
+  background: #E3E3E3;
+  border: 1px solid #d7d7d7;
+
+  /* border-radius not implemented yet*/
+  -moz-border-radius: 11px;
+  -webkit-border-radius: 11px;
+}

@@ -6,6 +6,8 @@ defmodule ApplicationRouter do
     # You can comment the line below if you don't need
     # any of them or move them to a forwarded router
     conn.fetch([:cookies, :params])
+
+    conn.assign :layout, "main"
   end
 
   # It is common to break your Dynamo into many
@@ -13,7 +15,12 @@ defmodule ApplicationRouter do
   # forward "/posts", to: PostsRouter
 
   get "/" do
-    conn = conn.assign(:title, "Welcome to Dynamo!")
+    conn = conn.assign(:title, "Welcome to Webapp!")
     render conn, "index.html"
+  end
+
+  get "/stream" do
+    conn = conn.resp_content_type("text/event-stream")
+    conn = conn.send_chunked(200)
   end
 end
